@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Panel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<style>
+    body{
+        margin: 0px;
+        padding: 0px;
+        background-color: #018de3;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bolder;
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+        /* border: 4px solid blue; */
+    }
+    #main-container{
+        width: 70%;
+        height: 500px;
+        background-color: white;
+        /* border: 4px solid red; */
+        margin: 108px auto;
+        border-radius: 15px;
+        display: flex;
+        justify-content: space-around;
+
+    }
+    .subcontainer{
+        width: 30%;
+        height: 100%;
+        /* border: 2px solid brown; */
+        text-align: center;
+        /* display: flex; */
+        /* align-items: center; */
+        /* justify-content: center; */
+    }
+    .subcontainer img{
+        width: 70%;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 30px;
+        padding-bottom: 10px;
+    }
+    .type{
+        color: gray;
+        /* border: 2px solid red; */
+    }
+    .description{
+        color: #018de3;
+    }
+    .price{
+        /* font-family: 'Bebas Neue', cursive; */
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bolder;
+        font-size: 30px;
+        color: #0d8ec3;
+    }
+    .btn{
+        color: #018de3;
+        background-color: white;
+        border: 1px solid #018de3;
+        width: 50%;
+        align-self: center;
+        padding: 10px;
+        border-radius: 5px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .btn:hover{
+        background-color: #018de3;
+        color: white;
+    }
+    .info{
+        /* border: 2px solid black; */
+        height: 17em;
+        padding: 5px;
+        padding-top: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        /* align-content: flex-end; */
+    }
+</style>
+<body>
+    <div id="main-container">
+        <div id="personal" class="subcontainer">
+            <div><img src="images/icon1.png" alt=""></div>
+            <div class="type">PERSONAL</div>
+            <div class="info">
+                <div class="description">CUSTOM DOMAINS</div>
+                <div class="description">SLEEPS AFTER 30 MINS OF INACTIVITY</div>
+                <div class="price">FREE</div>
+                <button id="personal-btn" class="btn">SIGN UP</button>
+            </div>
+        </div>
+        <div id="small-team" class="subcontainer">
+            <div><img src="images/icon2.png" alt=""></div>
+            <div class="type">SMALL TEAM</div>
+            <div class="info">
+                <div class="description">NEVER SLEEPS</div>
+                <div class="description">MULTIPLE WORKERS FOR MORE POWERFUL APPS</div>
+                <div class="price">$150</div>
+                <button id="small-team-btn" class="btn">FREE TRIAL</button>
+            </div>
+        </div>
+        <div id="enterprise" class="subcontainer">
+            <div><img src="images/icon3.png" alt=""></div>
+            <div class="type">ENTERPRISE</div>
+            <div class="info">
+                <div class="description">DEDICATED</div>
+                <div class="description">SIMPLE HORIZONTAL SCALABILITY</div>
+                <div class="price">$400</div>
+                <button id="enterprise-btn" class="btn">FREE TRIAL</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
